@@ -1,4 +1,4 @@
-// ## iNTRO
+// ## INTRO
 
 const amount = 12;
 
