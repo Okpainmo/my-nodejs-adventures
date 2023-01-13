@@ -132,6 +132,8 @@ JSON responses.
 > 200 is the success message code for DELETE REQUESTS.
 > 404 is the error/not successful message code for DELETE REQUESTS.
 
+> 500 is error code for general server error.
+
 ### Using Postman to construct a post request
 
 1. select post and add your route
@@ -139,3 +141,41 @@ JSON responses.
 3. select raw
 4. select the json option instead of the text option from the type menu
 5. ...
+
+# My NodeJs Adventures (CHAPTER 3 - fullstack todos app)
+
+### project analysis
+
+> app.get("api/v1/tasks") - get all tasks
+> app.post("api/v1/tasks") - create a new task
+> app.get("api/v1/tasks/:id") - get single task
+> app.patch("api/v1/tasks/:id") - update single task
+> app.delete("api/v1/tasks/:id") - delete single task
+
+> REST API - representational state transfer API
+> Rest is a pattern that combined HTTP verbs, route paths, and our resources(data). REST is a pattern not a strictly enforced set of rules.
+
+### MongoDB
+
+> uses json instead of table, rows and columns.
+> uses collections instead of tables.
+> uses documents instead of rows
+
+> MONGO DB CREDENTIALS
+> mongodb+srv://Okpainmo:<password>@node-express-course-pro.acj9pwz.mongodb.net/?retryWrites=true&w=majority
+
+### Mongoose returns a promise
+
+> mongoose.connect() returns a promise
+
+> in mongoose, an instance of a model is called a document.
+
+> A schema is just like a sieve or filter for you data. Only the properties that you set in your schema will be passed to the database. Every other will be ignored.
+
+- Check mongoose docs to learn more about validation.
+
+> ## as an assignment, ensure to read all related docs to learn more deeper about all the related technologies you've leanrt in this course.
+
+### CRUD process - Update using PUT vs using PATCH
+
+> PUT and PATCH are both update methods. But the assumption is that when you use Put, you're trying to replace the existing resource. But PATCH is for partial update.
