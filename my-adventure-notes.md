@@ -179,3 +179,15 @@ JSON responses.
 ### CRUD process - Update using PUT vs using PATCH
 
 > PUT and PATCH are both update methods. But the assumption is that when you use Put, you're trying to replace the existing resource. But PATCH is for partial update.
+
+### Extra mongoose possibilities.
+
+1. sorting
+2. selecting
+3. limiting
+4. skipping
+5. Numeric filtering
+
+check the final code base of the stores API project controllers(or anywhere else) to learn more - use the mongoose docs as well.
+
+> By combining skip and limit, you can create API pagination (pages). You simply choose the number of entries to return as a page.
