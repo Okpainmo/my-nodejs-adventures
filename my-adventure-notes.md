@@ -123,6 +123,8 @@ JSON responses.
 > The urlencoded middleware helps us get contents(body) of submitted forms.
 > The json middleware handles json data on post requests.
 
+> 401 is authentication error
+
 > 201 is the success message code for POST REQUESTS.
 > 400 is the error/not successful message code for POST REQUESTS.
 
@@ -191,3 +193,15 @@ JSON responses.
 check the final code base of the stores API project controllers(or anywhere else) to learn more - use the mongoose docs as well.
 
 > By combining skip and limit, you can create API pagination (pages). You simply choose the number of entries to return as a page.
+
+### JWT
+
+HTTP(the server) is stateless - hence we need to save our data somehow once any http response is recieved.
+
+> learn more about JWT - expcially, you can use it to branch into cryptography.
+
+> when using JWT, payloads should be kept small to provide a better user experience.
+
+> For the secret, use long complex and unguessable strings.
+
+> - do a personal study on JWT best practices.
